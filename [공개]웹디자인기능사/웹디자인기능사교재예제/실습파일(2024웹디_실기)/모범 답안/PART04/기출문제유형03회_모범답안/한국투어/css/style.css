@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "맑은 고딕";
+  color: #333333;
+  list-style: none;
+}
+html,
+body {
+  min-width: 1200px;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+header {
+  /* A영역:상단 영역 */
+  width: 100%; /* 상단 너비(브라우저100%) */
+  height: 100px; /* 상단 높이 */
+  background: #dddddd;
+}
+.wrap {
+  /* 헤더와 푸터 영역 콘텐츠 묶어줌 */
+  width: 1200px; /* 헤더와 푸터 영역 콘텐츠 너비 */
+}
+.logo {
+  /* 로고 영역 스타일 */
+  width: 250px; /* 로고 영역 너비 */
+  height: 100px; /* 로고 영역 높이 */
+  float: left;
+}
+.logo img {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 25px;
+  float: left;
+}
+#menu_bg {
+  /* 메뉴 슬라이드 배경 */
+  position: absolute;
+  top: 100px;
+  width: 1200px; /* 메뉴 슬라이드 배경 너비(브라우저100%) */
+  height: 160px; /* 서브메뉴 전체 높이 */
+  display: none;
+  z-index: 2;
+  background-color: #bbbbbb;
+}
+.menu {
+  /* 메뉴 영역 스타일 */
+  width: 800px; /* 메뉴 영역 너비 */
+  height: 100x; /* 메뉴 영역 높비 */
+  z-index: 1;
+  float: right;
+}
+.navi {
+  /* 전체 메뉴 스타일 */
+  margin-top: 50px;
+  margin-right: 0px;
+  float: right;
+}
+.navi > li {
+  /* 각 메인 메뉴 스타일 */
+  float: left;
+}
+.navi > li > a {
+  /* 각 메인 메뉴의 <a> 요소 스타일 */
+  width: 200px;
+  height: 50px;
+  background-color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+.navi > li > a:hover {
+  /* <a> 요소에 마우스를 올릴 때 스타일 */
+  background-color: #006478;
+}
+.submenu {
+  /* 서브 메뉴 영역 스타일 */
+  position: absolute;
+  width: 200px;
+  height: 160px;
+  display: none;
+  z-index: 3;
+  background-color: #bbbbbb;
+}
+.submenu > li > a {
+  /* 각 서브 메뉴의 <a> 요소 스타일 */
+  width: 200px;
+  height: 40px;
+  background-color: #bbbbbb;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #333333;
+  text-align: center;
+}
+.submenu > li > a:hover {
+  /* <a> 요소에 마우스를 올릴 때 스타일 */
+  background-color: #006478;
+}
+.imgslide {
+  /* B영역:이미지 슬라이드 영역 */
+  position: relative;
+  width: 1200px; /* 이미지 슬라이드 너비 */
+  height: 300px; /* 이미지 슬라이드 높이 */
+  overflow: hidden;
+}
+.imgslide > a {
+  position: absolute;
+  display: block;
+}
+.imgslide span {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 300px;
+  background-color: rgba(100, 100, 100, 0.7);
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.contents {
+  /* C영역:notice, gallery, shortcut 묶어줌 */
+  width: 1200px; /* 콘텐츠(공지사항, 갤러리, 바로가기) 너비 */
+  height: 200px; /* 콘텐츠(공지사항, 갤러리, 바로가기) 높이 */
+}
+.notice {
+  width: 400px;
+  height: 200px;
+  float: left;
+}
+.tab {
+  width: 400px;
+  float: left;
+}
+.notice h4 {
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+.notice > div {
+  width: 380px;
+  margin-left: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #fa9600;
+  float: left;
+}
+.notice ul {
+  width: 400px;
+  float: left;
+}
+.notice li {
+  height: 32px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 32px;
+}
+.notice li span {
+  float: right;
+}
+.notice li:nth-child(2n) {
+  background-color: #fa9600;
+}
+.notice li:hover {
+  font-weight: bold;
+}
+.gallery {
+  width: 400px;
+  height: 200px;
+  float: left;
+}
+.gallery h4 {
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+.gallery > div {
+  width: 380px;
+  margin-left: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #fa9600;
+}
+.gallery ul li {
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+.gallery img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.gallery li:hover {
+  opacity: 0.5;
+}
+.shortcut {
+  width: 400px;
+  height: 200px;
+  float: right;
+}
+.shortcut img {
+  width: 400px;
+  height: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: right;
+}
+.sctext {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  margin-top: 80px;
+  margin-left: 50px;
+  float: right;
+  background-color: rgba(40, 40, 40, 0.5);
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.sctext:hover {
+  opacity: 0.5;
+}
+#modal {
+  /* 모달 레이어 팝업창 배경 스타일 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+#modal.active {
+  display: block;
+}
+.modal_up {
+  /* 모달 팝업창 스타일*/
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 400px;
+  height: 300px;
+  background-color: #ffffff;
+}
+.uptitle {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+}
+.upbody {
+  padding: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+.btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 80px;
+  height: 20px;
+  display: block;
+  background: #cccccc;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+footer {
+  /* D영역:하단 영역 */
+  width: 100%; /* 하단 너비(브라우저100%) */
+  height: 100px; /* 하단 높이 */
+  background-color: #bbbbbb;
+}
+.copy {
+  width: 550px; /* Copyright 너비 */
+  height: 100px; /* Copyright 높이 */
+  float: left;
+  font-size: 20px;
+  line-height: 100px;
+  text-align: center;
+}
+.site {
+  /* sns와 familysite묶어줌 */
+  width: 400px; /* sns와 패일리 사이트 들어가는 곳 너비*/
+  height: 100px; /* sns와 패일리 사이트 들어가는 곳 높이*/
+  float: right;
+}
+.sns {
+  width: 400px; /*하단 메뉴 너비*/
+  height: 50px; /*하단 메뉴 높이*/
+  float: right;
+}
+.sns ul {
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
+}
+.sns li {
+  display: inline-block;
+}
+.sns img {
+  width: 40x;
+  height: 40px;
+  padding: 10px;
+}
+.sns img:hover {
+  opacity: 0.5;
+}
+.familysite {
+  width: 400px; /* 패밀리 사이트 너비 */
+  height: 50px; /* 패밀리 사이트 높이(site 높이의 1/2) */
+}
+.familysite select {
+  width: 200px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 14px;
+}
