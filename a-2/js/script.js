@@ -19,4 +19,13 @@ jQuery(document).ready(function () {
   slideList.animate({ marginLeft: -slideWidth }, 1000, slideInit);
  };
  setInterval(moveSlide, 3000);
+
+ // modal
+ $(".notice li:first-child").click(function (e) {
+  e.preventDefault();
+  $("#modal").addClass("active");
+ });
+ $(".modal-btn").click(function () {
+  $("#modal").removeClass("active");
+ });
 });
