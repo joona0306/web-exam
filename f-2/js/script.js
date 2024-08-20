@@ -17,4 +17,13 @@ jQuery(document).ready(function () {
    .end()
    .appendTo(".img-slide");
  }, 3000);
+
+ // modal
+ $(".notice li:first-child").click(function (e) {
+  e.preventDefault();
+  $("#modal").addClass("active");
+ });
+ $(".modal-btn").click(function () {
+  $("#modal").removeClass("active");
+ });
 });
