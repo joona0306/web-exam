@@ -243,3 +243,95 @@ img {
 .shortcut:hover a {
  opacity: 0.5;
 }
+
+.footer {
+ position: relative;
+ width: 100%;
+ height: 100px;
+ background-color: #ddd;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.footmenu {
+ position: relative;
+ width: 80%;
+ height: 100%;
+}
+
+.btmenu {
+ position: relative;
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+.btmenu li {
+}
+.btmenu a {
+}
+.btmenu a:hover {
+ font-weight: bold;
+}
+
+.copy {
+ position: relative;
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.familysite {
+ position: relative;
+ width: 20%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.familysite select {
+}
+.familysite option {
+}
+
+#modal {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+ z-index: 4;
+ display: none;
+}
+#modal.active {
+ display: block;
+}
+.modal-inner {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+ padding: 20px;
+ width: 400px;
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+ cursor: pointer;
+}
+.modal-btn:hover {
+ font-weight: bold;
+}
