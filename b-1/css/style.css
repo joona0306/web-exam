@@ -127,6 +127,33 @@ img {
  position: relative;
  height: 300px;
  background-color: yellow;
+ overflow: hidden;
+}
+.slide-list {
+ position: relative;
+ width: 300%;
+ height: 100%;
+ display: flex;
+}
+.slide-list li {
+ position: relative;
+}
+.slide-list a {
+}
+.slide-list img {
+ width: 1200px;
+ height: 300px;
+ object-fit: cover;
+}
+.slide-list span {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ padding: 10px 20px;
+ color: #fff;
+ background-color: rgba(0, 0, 0, 0.5);
+ font-size: 20px;
 }
 
 .contents {
@@ -151,6 +178,9 @@ img {
 }
 .tabmenu > ul > li {
  position: absolute;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
 }
 .tabmenu > ul > li > a {
  width: 100px;
@@ -188,18 +218,36 @@ img {
 .notice li {
 }
 .notice a {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ height: 35px;
 }
 .notice span {
+}
+.notice li:nth-child(even) a {
+ background-color: #ccc;
+}
+.notice li:hover a {
+ font-weight: bold;
 }
 
 .gallery ul {
  display: flex;
+ width: 100%;
+ height: 100%;
+ justify-content: space-between;
+ align-items: center;
 }
 .gallery li {
 }
 .gallery a {
 }
 .gallery img {
+}
+.gallery li:hover a {
+ opacity: 0.7;
 }
 
 .banner {
@@ -214,4 +262,41 @@ img {
  width: 100%;
  height: 100px;
  background-color: yellowgreen;
+}
+
+#modal {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.7);
+ display: none;
+}
+#modal.active {
+ display: block;
+}
+.modal-inner {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #f5f5f5;
+ width: 400px;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+.modal-title {
+}
+.modal-body {
+}
+.modal-btn {
+ cursor: pointer;
+}
+.modal-btn:hover {
+ font-weight: bold;
 }
